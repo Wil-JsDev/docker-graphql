@@ -44,7 +44,7 @@ jobs:
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
-        docker push wdelacruzdev/docker-graphql:$NEW_VERSION .
+        docker push wdelacruzdev/docker-graphql:$NEW_VERSION 
         docker push wdelacruzdev/docker-graphql:latest 
    
     # - name: Build the Docker image
